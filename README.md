@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Netporium – Next.js
 
-## Getting Started
+This is the Next.js version of the Netporium marketing site (converted from the Rails app in `The-Site`).
 
-First, run the development server:
+## Pages
+
+- **/** – Home (hero, service boxes, contact form)
+- **/about** – About Us
+- **/services** – Services and “What We Do Best”
+- **/contact** – Contact page with form
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contact form
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The contact form submits to `POST /api/send-notification`. The API route currently validates the payload and returns success; it does **not** send email.
 
-## Learn More
+To send real email, add a provider in `app/api/send-notification/route.ts`, for example:
 
-To learn more about Next.js, take a look at the following resources:
+- [Resend](https://resend.com): `npm install resend` and use their API.
+- [SendGrid](https://sendgrid.com) or [Nodemailer](https://nodemailer.com) with your SMTP.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Request body: `{ email, name, message }`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Stack
 
-## Deploy on Vercel
+- Next.js (App Router)
+- TypeScript
+- Bootstrap 5
+- Tailwind (minimal, for theme)
+- Font Awesome (CDN)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Node version
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 16 expects Node **>= 20.9.0**. If you see engine warnings, switch with `nvm use 20` (or install Node 20+).
+
+
+cd /Users/zenithmanuel/OrbStack/ubuntu/home/zenithmanuel/the-site-next
+npm install
+npm run dev
