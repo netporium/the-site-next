@@ -50,7 +50,10 @@ export default function Services() {
                   <li>Smart pricing & demand forecasting</li>
                 </div>
               </div>
-              <div className="boxes-row flex-column flex-md-row d-flex">
+              <div className="boxes-row flex-column flex-md-row-reverse d-flex">
+                <div className="box title-box" style={{ padding: "20px", textAlign: "center" }}>
+                  <h1>📦 Product Listing & Optimization</h1>
+                </div>
                 <div className="box">
                   <p>
                     Your product might be incredible, but if it&apos;s not
@@ -62,9 +65,6 @@ export default function Services() {
                     <li>📸 High-converting visuals that tell your brand story</li>
                     <li>📈 SEO-optimized listings for maximum visibility</li>
                   </ul>
-                </div>
-                <div className="box title-box" style={{ padding: "20px", textAlign: "center" }}>
-                  <h1>📦 Product Listing & Optimization</h1>
                 </div>
               </div>
               <div className="boxes-row flex-column flex-md-row d-flex">
@@ -82,7 +82,10 @@ export default function Services() {
                   </ul>
                 </div>
               </div>
-              <div className="boxes-row flex-column flex-md-row d-flex">
+              <div className="boxes-row flex-column flex-md-row-reverse d-flex">
+                <div className="box title-box" style={{ padding: "20px", textAlign: "center" }}>
+                  <h1>🎯 Brand Growth & Marketing Strategy</h1>
+                </div>
                 <div className="box">
                   A great product deserves a great audience. We use insights,
                   analytics, and creative campaigns to get your brand the
@@ -92,9 +95,6 @@ export default function Services() {
                     <li>📢 Marketing strategies that boost conversions</li>
                     <li>💡 Sales analytics & pricing intelligence</li>
                   </ul>
-                </div>
-                <div className="box title-box" style={{ padding: "20px", textAlign: "center" }}>
-                  <h1>🎯 Brand Growth & Marketing Strategy</h1>
                 </div>
               </div>
               <div className="boxes-row flex-column flex-md-row d-flex">
