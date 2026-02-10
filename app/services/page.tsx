@@ -115,7 +115,7 @@ export default function Services() {
             </div>
 
             <br />
-            <div className="boxes shadow-lg bg-body rounded" style={{ padding: "100px" }}>
+            <div className="boxes services-closing shadow-lg bg-body rounded" style={{ padding: "100px" }}>
               <p>Let&apos;s Build Something Big Together</p>
               <p>
                 Your journey to eCommerce success starts here. Whether

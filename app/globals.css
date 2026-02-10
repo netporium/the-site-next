@@ -226,6 +226,13 @@ body {
 .services-sections p {
   padding-right: 0.5rem;
 }
+.services-closing p {
+  font-size: 1.25rem;
+}
+.services-closing p:first-of-type {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
 @media (max-width: 768px) {
   .page-services .boxes.services-sections {
     padding-left: 1.5rem !important;
