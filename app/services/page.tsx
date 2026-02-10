@@ -7,7 +7,7 @@ export default function Services() {
     <>
       <PageBackground variant="services" />
       <Navbar />
-      <div>
+      <div className="page-services">
         <div className="container">
           <div className="content">
             <div className="hero-section" style={{ height: "200px" }}>
@@ -31,7 +31,7 @@ export default function Services() {
             </div>
             <br />
 
-            <div className="boxes shadow-lg bg-body rounded" style={{ padding: "100px", fontSize: "2rem" }}>
+            <div className="boxes services-sections shadow-lg bg-body rounded" style={{ padding: "100px", fontSize: "2rem" }}>
               <div className="boxes-row mb-5 w-100 justify-content-center flex-1 d-flex">
                 <h1>What We Do Best</h1>
               </div>
@@ -57,7 +57,7 @@ export default function Services() {
                     optimized, it&apos;s invisible. We craft listings that sell
                     by combining strategy and creativity.
                   </p>
-                  <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
+                  <ul className="services-list" style={{ listStyleType: "none" }}>
                     <li>🎯 Keyword-driven content that gets your products noticed</li>
                     <li>📸 High-converting visuals that tell your brand story</li>
                     <li>📈 SEO-optimized listings for maximum visibility</li>
@@ -75,7 +75,7 @@ export default function Services() {
                   Stockouts? Overstock? Lost shipments? Not on our watch. We
                   streamline your supply chain, making sure everything runs like
                   a well-oiled machine.
-                  <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
+                  <ul className="services-list" style={{ listStyleType: "none" }}>
                     <li>✔ Real-time inventory tracking to prevent stock issues</li>
                     <li>✔ Automated order processing for efficiency</li>
                     <li>✔ Data-driven restocking strategies</li>
@@ -87,7 +87,7 @@ export default function Services() {
                   A great product deserves a great audience. We use insights,
                   analytics, and creative campaigns to get your brand the
                   recognition it deserves.
-                  <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
+                  <ul className="services-list" style={{ listStyleType: "none" }}>
                     <li>🔥 Competitor research to stay ahead of the game</li>
                     <li>📢 Marketing strategies that boost conversions</li>
                     <li>💡 Sales analytics & pricing intelligence</li>
@@ -105,7 +105,7 @@ export default function Services() {
                   Your customers expect a smooth experience—we make sure they get
                   it. We manage feedback, resolve issues, and ensure compliance
                   with online marketplace policies.
-                  <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
+                  <ul className="services-list" style={{ listStyleType: "none" }}>
                     <li>✅ Customer service support to maintain brand trust</li>
                     <li>✅ Returns & dispute resolution</li>
                     <li>✅ Platform compliance & risk management</li>

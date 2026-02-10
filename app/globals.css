@@ -193,6 +193,46 @@ body {
   transform: translateY(400px);
   transition: transform 0.2s ease-in-out;
 }
+
+/* Services page: prevent text from being cut off */
+.page-services .content,
+.page-services .container,
+.page-services .boxes {
+  overflow-x: visible;
+  overflow-y: visible;
+}
+.services-sections .box {
+  overflow: visible;
+  height: auto;
+  min-height: unset;
+  min-width: 0; /* allow flex item to shrink so content can wrap */
+  padding: 1.25rem 1.5rem;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.services-sections .boxes-row {
+  flex-wrap: wrap;
+  overflow: visible;
+}
+.services-sections .boxes-row .box {
+  flex: 1 1 280px; /* grow, shrink, min ~280px so columns don't get too narrow */
+}
+.services-sections .services-list {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+.services-sections p {
+  padding-right: 0.5rem;
+}
+@media (max-width: 768px) {
+  .page-services .boxes.services-sections {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
 .hero-section {
   height: 500px;
 }
